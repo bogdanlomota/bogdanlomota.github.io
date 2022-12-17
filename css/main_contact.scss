@@ -1,0 +1,146 @@
+.main_c {
+    margin-top: 32px;
+    color: #333333;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.fundalscris{
+    position:absolute;
+    z-index: -1;
+    top:70px;
+    font-size: 200px;
+    color: #F7F7F7;
+    justify-self: center ;
+
+}
+
+h2{
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 135%;
+    text-align: center;
+    max-width: 550px;
+}
+
+h5{
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 150%;
+    text-align: center;
+    max-width: 475px;
+}
+
+.emailbutton{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-top: 45px;
+}
+
+.copyemail{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 25px;
+    color: #FCFCFC;
+    background-color: #333333;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.copyemailicon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 22px 22px;
+    background-color: #FCFCFC;
+    border-style: solid;
+    border-width: 1px 5px 5px 1px;
+    border-radius: 0px 5px 5px 0px;
+    border-color: #333333;  
+}
+
+.contactform{
+    margin-top: 48px;
+    margin-bottom: 32px;
+    width: 740px;
+    height: auto;
+    padding: 32px 48px;
+    border-style: solid;
+    border-width: 1px 5px 5px 1px;
+    border-radius: 5px;
+    border-color: #333333;
+}
+
+.formname, .formemail, .formmessage{
+    margin-bottom: 48px;
+    padding: 4px;
+    display: block;
+    border-style: solid;
+    border-width: 0px 0px 3px 0px;
+    border-radius: 2px;
+    border-color: #333333;
+
+    font-size: 18px;
+    color: #333333;
+}
+
+.formname, .formemail{
+    width: 50%;
+}
+.formmessage{
+    width: 100%;
+}
+
+::placeholder {
+    color: #333333;
+    opacity: 1; 
+}
+
+.formbutton{
+    padding: 15px 32px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #FCFCFC;
+    border-style: solid;
+    border-width: 1px 5px 5px 1px;
+    border-radius: 5px;
+    border-color: #333333;
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+.formbutton:hover{
+    cursor: pointer;
+    background-color: #333333;
+    color: #FCFCFC;
+}
+
+
+@media only screen and (max-width:900px){
+
+    .contactform{
+        width: 400px;
+    }
+
+    .formname, .formemail{
+        width: 100%;
+    }
+    .fundalscris{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width:500px){
+
+    .contactform{
+        width: 250px;
+    }
+
+    .formname, .formemail{
+        width: 100%;
+    }
+}
